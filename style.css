@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#thumbnail-banner {
+  height: 120px;
+  overflow: scroll;
+  position: absolute;
+  top: 2%;
+}
+
+#thumbnail-banner > img {
+  max-height: 100%;
+}
+
+#image-container {
+  height: 100svh;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+#image-container > img {
+  height: 100%;
+}
