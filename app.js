@@ -38,13 +38,19 @@ const images = [
  */
 function setImage(imageId) {
   console.log(imageId);
-  let image = images[imageId % images.length];
-  this.currentImage = imageId;
 
-  let currentImage = imageHolder.firstElementChild;
-  if (currentImage != null) {
+  if (imageId < 0) {
+    while (imageId < 0) {
+      imageId += images.length;
+    }
+  }
+  let image = images[imageId % images.length];
+  currentImage = imageId;
+
+  let currentImageElement = imageHolder.firstElementChild;
+  if (currentImageElement != null) {
     //currentImage.classList.add("removal");
-    currentImage.remove();
+    currentImageElement.remove();
   }
   imageHolder.appendChild(createElementForImage(image));
 }
@@ -64,7 +70,10 @@ function createElementForImage(image) {
 
 document.addEventListener("keydown", function (event) {
   if (event.key == "ArrowLeft") {
+    // Do not mutate the counter here, even if we can get away with it
+    setImage(currentImage - 1);
   } else if (event.key === "ArrowRight") {
+    setImage(currentImage + 1);
   }
   console.log(event);
 });
