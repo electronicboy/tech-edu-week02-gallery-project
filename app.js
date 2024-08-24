@@ -30,6 +30,65 @@ const images = [
     source:
       "https://www.pexels.com/photo/low-angle-view-of-a-japanese-temple-and-a-tree-in-autumn-foliage-15830265/",
   },
+
+  {
+    image: "bagus41-1440476",
+    desc: "Close Up Photography of Cherry Blossom Tree",
+    source:
+      "https://www.pexels.com/photo/close-up-photography-of-cherry-blossom-tree-1440476/",
+  },
+  {
+    image: "luna-luna-1821346-3625108",
+    desc: "Kinkaku-ji Temple in Kyoto",
+    source: "https://www.pexels.com/photo/kinkaku-ji-temple-in-kyoto-3625108/",
+  },
+  {
+    image: "ryutaro-5745817",
+    desc: "Narrow alley with small traditional wooden houses in Japan",
+    source:
+      "https://www.pexels.com/photo/narrow-alley-with-small-traditional-wooden-houses-in-japan-5745817/",
+  },
+  {
+    image: "ryutaro-5745869",
+    desc: "White and Red Paper Lanterns",
+    source:
+      "https://www.pexels.com/photo/white-and-red-paper-lanterns-5745869/",
+  },
+  {
+    image: "willianjusten-15830265",
+    desc: "Low Angle View of a Japanese Temple and a Tree in Autumn Foliage",
+    source:
+      "https://www.pexels.com/photo/low-angle-view-of-a-japanese-temple-and-a-tree-in-autumn-foliage-15830265/",
+  },
+  {
+    image: "bagus41-1440476",
+    desc: "Close Up Photography of Cherry Blossom Tree",
+    source:
+      "https://www.pexels.com/photo/close-up-photography-of-cherry-blossom-tree-1440476/",
+  },
+  {
+    image: "luna-luna-1821346-3625108",
+    desc: "Kinkaku-ji Temple in Kyoto",
+    source: "https://www.pexels.com/photo/kinkaku-ji-temple-in-kyoto-3625108/",
+  },
+  {
+    image: "ryutaro-5745817",
+    desc: "Narrow alley with small traditional wooden houses in Japan",
+    source:
+      "https://www.pexels.com/photo/narrow-alley-with-small-traditional-wooden-houses-in-japan-5745817/",
+  },
+  {
+    image: "ryutaro-5745869",
+    desc: "White and Red Paper Lanterns",
+    source:
+      "https://www.pexels.com/photo/white-and-red-paper-lanterns-5745869/",
+  },
+  {
+    image: "willianjusten-15830265",
+    desc: "Low Angle View of a Japanese Temple and a Tree in Autumn Foliage",
+    source:
+      "https://www.pexels.com/photo/low-angle-view-of-a-japanese-temple-and-a-tree-in-autumn-foliage-15830265/",
+  },
 ];
 
 /**
