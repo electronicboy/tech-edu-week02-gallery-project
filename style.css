@@ -25,6 +25,11 @@
   justify-content: center;
 
   bottom: 2svh;
+
+  /* background-color: slategray; 70, 80, 90 */
+  background-color: rgba(112, 128, 144, 0.7);
+  border-radius: 5px;
+  padding: 3px;
 }
 
 #thumbnail-banner > img {
