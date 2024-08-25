@@ -107,7 +107,7 @@ images.forEach(function (image, index) {
   /** @type {HTMLImageElement} */
   let img = document.createElement("img");
 
-  img.src = `./images/${image.image}/image.jpg`;
+  img.src = `./images/${image.image}/thumbnail.jpg`;
   img.alt = image.desc;
 
   img.addEventListener("click", function () {
@@ -125,5 +125,8 @@ images.forEach(function (image, index) {
 
   thumbnailBanner.appendChild(img);
 });
+
+ariaAnnouncer.textContent =
+  "Image gallery, use arrow keys or image frame preview to navigate";
 
 setImage(0);
