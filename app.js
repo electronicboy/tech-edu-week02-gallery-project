@@ -4,47 +4,55 @@ const images = [
   {
     image: "bagus41-1440476",
     desc: "Close Up Photography of Cherry Blossom Tree",
+    sets: [512, 1024, 2048],
     source:
       "https://www.pexels.com/photo/close-up-photography-of-cherry-blossom-tree-1440476/",
   },
   {
     image: "balazsimon-16154088",
     desc: "A Japanese Garden with a Temple and a Pond",
+    sets: [512, 1024, 2048],
     source:
       "https://www.pexels.com/photo/a-japanese-garden-with-a-temple-and-a-pond-16154088/",
   },
   {
     image: "luna-luna-1821346-3625108",
     desc: "Kinkaku-ji Temple in Kyoto",
+    sets: [512, 1024, 2048],
     source: "https://www.pexels.com/photo/kinkaku-ji-temple-in-kyoto-3625108/",
   },
   {
     image: "pixabay-161164",
     desc: "Red Black and White Building Structure Surrounded by Trees Under White Clouds during Daytime",
+    sets: [512, 1024, 2048],
     source:
       "https://www.pexels.com/photo/red-black-and-white-building-structure-surrounded-by-trees-under-white-clouds-during-daytime-161164/",
   },
   {
     image: "ryutaro-5745817",
     desc: "Narrow alley with small traditional wooden houses in Japan",
+    sets: [512, 1024, 2048],
     source:
       "https://www.pexels.com/photo/narrow-alley-with-small-traditional-wooden-houses-in-japan-5745817/",
   },
   {
     image: "ryutaro-5745869",
     desc: "White and Red Paper Lanterns",
+    sets: [512, 1024],
     source:
       "https://www.pexels.com/photo/white-and-red-paper-lanterns-5745869/",
   },
   {
     image: "stephan-streuders-2134979-3767837",
     desc: "Photo of Walkway Between Shinto Shrine",
+    sets: [512, 1024, 2048],
     source:
       "https://www.pexels.com/photo/photo-of-walkway-between-shinto-shrine-3767837/",
   },
   {
     image: "willianjusten-15830265",
     desc: "Low Angle View of a Japanese Temple and a Tree in Autumn Foliage",
+    sets: [512, 1024, 2048],
     source:
       "https://www.pexels.com/photo/low-angle-view-of-a-japanese-temple-and-a-tree-in-autumn-foliage-15830265/",
   },
@@ -82,12 +90,21 @@ function setImage(imageId) {
 
 /**
  *
- * @param {{image: string, desc: string}} image
+ * @param {{image: string, desc: string, sets: number[]}} image
  * @returns {HTMLImageElement}
  */
 function createElementForImage(image) {
   let img = document.createElement("img");
-  img.src = `./images/${image.image}/image.jpg`;
+  let imgRoot = `./images/${image.image}`;
+
+  let sourceSetDef = "";
+  for (let sizeDef of image.sets) {
+    sourceSetDef += `${imgRoot}/${sizeDef}.jpg ${sizeDef}w,`;
+  }
+  if (sourceSetDef.length !== 0) {
+    img.srcset = sourceSetDef;
+  }
+  img.src = `${imgRoot}/image.jpg`;
   img.alt = image.desc;
 
   return img;
