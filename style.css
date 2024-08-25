@@ -72,3 +72,13 @@
   /* setting position basically causes this to be ontop, so, override this */
   z-index: -1;
 }
+
+/************************
+*    aria notificatier
+*************************/
+
+#aria-image-meta {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
