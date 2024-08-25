@@ -22,7 +22,6 @@
   max-width: 78svw;
 
   display: flex;
-  justify-content: center;
 
   bottom: 2svh;
 
@@ -39,6 +38,13 @@
 @media (min-width: 600px) {
   #thumbnail-banner {
     top: 2%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #thumbnail-banner {
+    max-width: 780px;
+    padding-left: 10px;
   }
 }
 
