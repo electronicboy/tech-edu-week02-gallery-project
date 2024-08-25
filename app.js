@@ -97,6 +97,7 @@ function createElementForImage(image) {
   let img = document.createElement("img");
   let imgRoot = `./images/${image.image}`;
 
+  // img.sizes = "100vw";
   let sourceSetDef = "";
   for (let sizeDef of image.sets) {
     sourceSetDef += `${imgRoot}/${sizeDef}.jpg ${sizeDef}w,`;

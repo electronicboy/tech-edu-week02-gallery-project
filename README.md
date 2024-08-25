@@ -11,3 +11,7 @@ queries and their lack of usage and may expend upon this as I toy with the stret
 utilsing CSS to get the desired outcome is somewhat difficult at times due to a bit of a lack of experience/creativity
 when it comes to taking advantage of them to pull off desired effects, for example, not realizing that having set the
 justify-content on the flex was causing my images to be clipped under the thumbnail container div.
+
+I used imagemagick to resize the images automatically and manually discarded any useless ones, I've managed to get it to
+use the media queries, however, it seems that for some reason it accounting the oversized clip of the image off the screen.
+The only real way I can imagine that it would be possible to get around this would be to attempt to generate pre-cropped images.
